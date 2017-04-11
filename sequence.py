@@ -1,7 +1,6 @@
-"""A function which produces specified outputs on specified inputs.
+"""A function which produces specified outputs on natural number inputs.
 """
 
-#from math import pi
 from sympy import *
 
 def sequence(*args):
@@ -9,14 +8,13 @@ def sequence(*args):
 
     I hope to add the capacity to accept inputs to replace natural n
     """
-    #sum_j frac{prod_i x-a_i}{prod_(i!=j)(a_i=a_j)}*b_j
+    #sum_j frac{prod_(i!=j) x-a_i}{prod_(i!=j)(a_i=a_j)}*b_j
     #args are the b_j
     #a_i default to range(len(args))
     args2=range(len(args))
 
     n=Symbol('n')
 
-    #below is a place-holder to start building the above
     function=0
     for j in args2:
         summand=1
@@ -44,7 +42,10 @@ if __name__=='__main__':
     numTerms=int(numTerms)
     for term in range(numTerms):
         temp=raw_input('next term:')
-        args.append(eval(temp))
+        args.append(eval(temp))#WARNING: eval will execute user code and presents a security risk in general
+
+
+
     #args=(2,pi,1,-16.2)
 
     sequence(*args)
