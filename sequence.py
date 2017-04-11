@@ -44,8 +44,6 @@ if __name__=='__main__':
         temp=raw_input('next term:')
         args.append(eval(temp))#WARNING: eval will execute user code and presents a security risk in general
 
-
-
     #args=(2,pi,1,-16.2)
 
     sequence(*args)
