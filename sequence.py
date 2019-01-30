@@ -5,10 +5,10 @@ from sympy import *
 
 def sequence(*args):
     """Function takes args and produces a function which outputs the nth arg on n
-
+    TEST TEXT TO CHECK GIT
     I hope to add the capacity to accept inputs to replace natural n
     """
-    #sum_j frac{prod_(i!=j) x-a_i}{prod_(i!=j)(a_i=a_j)}*b_j
+    #sum_j frac{prod_(i!=j) x-a_i}{prod_(i!=j)(a_i-a_j)}*b_j
     #args are the b_j
     #a_i default to range(len(args))
     args2=range(len(args))
