@@ -38,10 +38,10 @@ def sequence(*args):
 
 if __name__=='__main__':
     args=[]
-    numTerms=raw_input('how many terms?')
+    numTerms=input('how many terms?')
     numTerms=int(numTerms)
     for term in range(numTerms):
-        temp=raw_input('next term:')
+        temp=input('next term:')
         args.append(eval(temp))#WARNING: eval will execute user code and presents a security risk in general
 
     #args=(2,pi,1,-16.2)
