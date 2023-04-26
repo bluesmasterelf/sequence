@@ -4,9 +4,9 @@
 from sympy import *
 
 def sequence(*args):
-    """Function takes args and produces a function which outputs the nth arg on n
-    TEST TEXT TO CHECK GIT
-    I hope to add the capacity to accept inputs to replace natural n
+    """Function takes numerical args and produces a function which outputs the nth arg on n
+    I hope to add the capacity to accept inputs to replace natural n for positional inputs. 
+    Using the sympy library, it can build functions using symbolic logic such as a function that is 'a' at input 1 and '2' at input 2 and 'pi' at input 3.
     """
     #sum_j frac{prod_(i!=j) x-a_i}{prod_(i!=j)(a_i-a_j)}*b_j
     #args are the b_j
